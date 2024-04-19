@@ -1,14 +1,16 @@
 Pod::Spec.new do |s|
   s.name     = 'Masonry'
-  s.version  = '1.1.0'
+  s.version  = '1.1.1'
   s.license  = 'MIT'
   s.summary  = 'Harness the power of Auto Layout NSLayoutConstraints with a simplified, chainable and expressive syntax.'
-  s.homepage = 'https://github.com/cloudkite/Masonry'
+  s.homepage = 'https://github.com/leiyuncun/Masonry'
   s.author   = { 'Jonas Budelmann' => 'jonas.budelmann@gmail.com' }
   s.social_media_url = "http://twitter.com/cloudkite"
 
-  s.source   = { :git => 'https://github.com/cloudkite/Masonry.git', :tag => "v#{s.version}" }
-
+  s.source   = { :git => 'https://github.com/leiyuncun/Masonry.git', :tag => "v#{s.version}" }
+  s.resource_bundles = {
+    'Masonry_Privacy' => ['Sources/PrivacyInfo.xcprivacy'],
+  }
   s.description = %{
     Masonry is a light-weight layout framework which wraps AutoLayout with a nicer syntax.
 	Masonry has its own layout DSL which provides a chainable way of describing your
